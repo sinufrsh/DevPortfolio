@@ -1,0 +1,25 @@
+@import "tailwindcss";
+/* index.css */
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.theme-dark {
+    --bg: #0B1120;
+    --card: #161E2E;
+    --text: white;
+    --text-secondary: #CBD5E1;
+}
+
+.theme-light {
+    --bg: white;
+    --card: #F8FAFC;
+    --text: #111827;
+    --text-secondary: #4B5563;
+}

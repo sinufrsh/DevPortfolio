@@ -1,0 +1,29 @@
+# Backend
+Backend/Devportfolio/target/
+Backend/Devportfolio/.metadata/
+Backend/Devportfolio/.settings/
+Backend/Devportfolio/.classpath
+Backend/Devportfolio/.project
+
+# Backend secrets
+Backend/Devportfolio/src/main/resources/application.properties
+
+# Application uploaded files
+Backend/Devportfolio/uploads/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
