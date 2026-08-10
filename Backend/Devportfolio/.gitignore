@@ -34,9 +34,10 @@ build/
 
 
 # Environment-specific configuration
+src/main/resources/application.properties
 src/main/resources/application-local.properties
-src/main/resources/application-prod.properties
 
 # Uploaded files
 uploads/
+
 .env
