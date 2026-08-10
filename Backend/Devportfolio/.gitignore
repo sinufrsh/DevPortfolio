@@ -33,6 +33,10 @@ build/
 .vscode/
 
 
+# Environment-specific configuration
 src/main/resources/application-local.properties
-.env
+src/main/resources/application-prod.properties
+
+# Uploaded files
 uploads/
+.env
