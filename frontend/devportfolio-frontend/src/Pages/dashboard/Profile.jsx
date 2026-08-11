@@ -1,5 +1,5 @@
-import { useOutletContext } from "react-router-dom";
-import ProfileForm from "../../Components/dashboard/profile/ProfileForm";
+
+import ProfileForm from "../../Components/Dashboard/Profile/ProfileForm";
 
 function Profile() {
 

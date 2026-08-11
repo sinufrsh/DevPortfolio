@@ -6,7 +6,7 @@ import Educations from "../Components/Portfolio/Educations";
 import Experiences from "../Components/Portfolio/Experiences";
 import Footer from "../Components/Portfolio/Footer";
 import Hero from "../Components/Portfolio/Hero";
-import Navbar from "../Components/Portfolio/NavBar";
+import Navbar from "../Components/Portfolio/Navbar";
 import Projects from "../Components/Portfolio/Projects";
 import Skills from "../Components/Portfolio/Skills";
 import { useParams } from "react-router-dom";
