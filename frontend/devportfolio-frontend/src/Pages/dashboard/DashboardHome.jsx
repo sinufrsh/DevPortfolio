@@ -53,9 +53,7 @@ function DashboardHome() {
         }
     }, [portfolio]);
 
-    if (!dashboard) {
-        return <DashboardSkeleton />;
-    }
+
     if (!portfolio) {
 
         return (
@@ -81,6 +79,10 @@ function DashboardHome() {
 
         );
 
+    }
+
+    if (!dashboard) {
+        return <DashboardSkeleton />;
     }
 
     const handlePublish = async () => {
