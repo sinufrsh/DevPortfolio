@@ -9,6 +9,7 @@ import Hero from "../Components/Portfolio/Hero";
 import Navbar from "../Components/Portfolio/Navbar";
 import Projects from "../Components/Portfolio/Projects";
 import Skills from "../Components/Portfolio/Skills";
+import PortfolioSkeleton from "../Components/Common/PortfolioSkeleton";
 
 
 function Preview() {
@@ -60,11 +61,7 @@ function Preview() {
 
         return (
 
-            <div className="min-h-screen flex justify-center items-center">
-
-                Loading Portfolio...
-
-            </div>
+            <PortfolioSkeleton />
 
         );
 
