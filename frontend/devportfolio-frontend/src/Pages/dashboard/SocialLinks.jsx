@@ -22,7 +22,7 @@ function SocialLinks() {
         try {
 
             const response = await fetch(
-                "http://localhost:8080/api/social-links",
+                `${import.meta.env.VITE_API_BASE_URL}/api/social-links`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

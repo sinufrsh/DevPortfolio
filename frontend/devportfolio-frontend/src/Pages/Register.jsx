@@ -54,7 +54,7 @@ function Register() {
         try {
 
             const response = await fetch(
-                "http://localhost:8080/api/auth/register",
+                `${import.meta.env.VITE_API_BASE_URL}/api/auth/register`,
                 {
                     method: "POST",
                     headers: {
@@ -133,8 +133,8 @@ function Register() {
                             onChange={handleChange}
                             placeholder="Enter your full name"
                             className={`w-full rounded-lg px-4 py-3 border focus:outline-none focus:ring-2 ${errors.fullName
-                                    ? "border-red-500 focus:ring-red-500"
-                                    : "border-gray-300 focus:ring-indigo-500"
+                                ? "border-red-500 focus:ring-red-500"
+                                : "border-gray-300 focus:ring-indigo-500"
                                 }`}
                         />
 
@@ -159,8 +159,8 @@ function Register() {
                             onChange={handleChange}
                             placeholder="Enter your email"
                             className={`w-full rounded-lg px-4 py-3 border focus:outline-none focus:ring-2 ${errors.email
-                                    ? "border-red-500 focus:ring-red-500"
-                                    : "border-gray-300 focus:ring-indigo-500"
+                                ? "border-red-500 focus:ring-red-500"
+                                : "border-gray-300 focus:ring-indigo-500"
                                 }`}
                         />
 
@@ -187,8 +187,8 @@ function Register() {
                                 onChange={handleChange}
                                 placeholder="Enter your password"
                                 className={`w-full rounded-lg px-4 py-3 pr-12 border focus:outline-none focus:ring-2 ${errors.password
-                                        ? "border-red-500 focus:ring-red-500"
-                                        : "border-gray-300 focus:ring-indigo-500"
+                                    ? "border-red-500 focus:ring-red-500"
+                                    : "border-gray-300 focus:ring-indigo-500"
                                     }`}
                             />
 
@@ -234,8 +234,8 @@ function Register() {
                                 onChange={handleChange}
                                 placeholder="Confirm your password"
                                 className={`w-full rounded-lg px-4 py-3 pr-12 border focus:outline-none focus:ring-2 ${errors.confirmPassword
-                                        ? "border-red-500 focus:ring-red-500"
-                                        : "border-gray-300 focus:ring-indigo-500"
+                                    ? "border-red-500 focus:ring-red-500"
+                                    : "border-gray-300 focus:ring-indigo-500"
                                     }`}
                             />
 

@@ -27,7 +27,7 @@ function DashboardHome() {
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                "http://localhost:8080/api/dashboard",
+                `${import.meta.env.VITE_API_BASE_URL}/api/dashboard`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -88,7 +88,7 @@ function DashboardHome() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-            "http://localhost:8080/api/portfolio/publish",
+            `${import.meta.env.VITE_API_BASE_URL}/api/portfolio/publish`,
             {
                 method: "PUT",
                 headers: {
@@ -112,7 +112,7 @@ function DashboardHome() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-            "http://localhost:8080/api/portfolio/unpublish",
+            `${import.meta.env.VITE_API_BASE_URL}/api/portfolio/unpublish`,
             {
                 method: "PUT",
                 headers: {

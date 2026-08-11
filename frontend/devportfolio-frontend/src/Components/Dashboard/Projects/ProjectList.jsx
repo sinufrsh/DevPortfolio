@@ -29,7 +29,7 @@ function ProjectList({ projects,
         try {
 
             const response = await fetch(
-                `http://localhost:8080/api/projects/${selectedProjectId}`,
+                `${import.meta.env.VITE_API_BASE_URL}/api/projects/${selectedProjectId}`,
                 {
                     method: "DELETE",
                     headers: {
@@ -88,7 +88,7 @@ function ProjectList({ projects,
                     <img
                         src={
                             project.imageUrl
-                                ? `http://localhost:8080${project.imageUrl}`
+                                ? `${import.meta.env.VITE_API_BASE_URL}${project.imageUrl}`
                                 : "https://via.placeholder.com/600x250?text=No+Image"
                         }
                         alt={project.title}

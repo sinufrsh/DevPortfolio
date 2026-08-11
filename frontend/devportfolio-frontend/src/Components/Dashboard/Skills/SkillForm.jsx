@@ -22,8 +22,8 @@ function SkillForm({ fetchSkills, editingSkill, setEdditing }) {
         try {
 
             const url = editingSkill
-                ? `http://localhost:8080/api/skills/${editingSkill.id}`
-                : "http://localhost:8080/api/skills";
+                ? `${import.meta.env.VITE_API_BASE_URL}/api/skills/${editingSkill.id}`
+                : `${import.meta.env.VITE_API_BASE_URL}/api/skills`;
 
             const method = editingSkill ? "PUT" : "POST";
 

@@ -45,7 +45,7 @@ function SocialLinksForm({
 
         try {
 
-            const url = "http://localhost:8080/api/social-links";
+            const url = `${import.meta.env.VITE_API_BASE_URL}/api/social-links`;
 
             const method =
                 currentSocialLinks.id ? "PUT" : "POST";

@@ -28,7 +28,7 @@ function PublicPortfolio() {
         try {
 
             const response = await fetch(
-                `http://localhost:8080/api/public/${username}`,
+                `${import.meta.env.VITE_API_BASE_URL}/api/public/${username}`,
 
             );
 

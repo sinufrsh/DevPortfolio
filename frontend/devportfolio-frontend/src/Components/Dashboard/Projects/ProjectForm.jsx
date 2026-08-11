@@ -44,8 +44,8 @@ function ProjectForm({ fetchProjects, editingProject, setEditingProject }) {
         try {
 
             const url = editingProject
-                ? `http://localhost:8080/api/projects/${editingProject.id}`
-                : "http://localhost:8080/api/projects";
+                ? `${import.meta.env.VITE_API_BASE_URL}/api/projects/${editingProject.id}`
+                : `${import.meta.env.VITE_API_BASE_URL}/api/projects`;
 
             const method = editingProject ? "PUT" : "POST";
 

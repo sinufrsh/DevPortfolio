@@ -15,7 +15,7 @@ function Certificate() {
         try {
 
             const response = await fetch(
-                "http://localhost:8080/api/certifications",
+                `${import.meta.env.VITE_API_BASE_URL}/api/certifications`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

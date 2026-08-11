@@ -12,7 +12,7 @@ function Skills() {
     const fetchSkills = async () => {
         const token = localStorage.getItem("token");
 
-        const response = await fetch("http://localhost:8080/api/skills", {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/skills`, {
             headers: {
                 Authorization: `Bearer ${token}`
             }

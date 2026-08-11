@@ -31,7 +31,7 @@ function EducationList({
         try {
 
             const response = await fetch(
-                `http://localhost:8080/api/educations/${selectedId}`,
+                `${import.meta.env.VITE_API_BASE_URL}/api/educations/${selectedId}`,
                 {
                     method: "DELETE",
                     headers: {

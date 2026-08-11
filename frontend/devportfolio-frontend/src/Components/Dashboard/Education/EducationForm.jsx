@@ -43,8 +43,8 @@ function EducationForm({
         try {
 
             const url = editingEducation
-                ? `http://localhost:8080/api/educations/${editingEducation.id}`
-                : "http://localhost:8080/api/educations";
+                ? `${import.meta.env.VITE_API_BASE_URL}/api/educations/${editingEducation.id}`
+                : `${import.meta.env.VITE_API_BASE_URL}/api/educations`;
 
             const method = editingEducation ? "PUT" : "POST";
 

@@ -45,7 +45,7 @@ function LoginForm() {
         try {
 
             const response = await fetch(
-                "http://localhost:8080/api/auth/login",
+                `${import.meta.env.VITE_API_BASE_URL}/api/auth/login`,
                 {
                     method: "POST",
                     headers: {
@@ -132,8 +132,8 @@ function LoginForm() {
                         }}
                         placeholder="Enter your email"
                         className={`w-full rounded-lg px-4 py-3 focus:outline-none focus:ring-2 ${errors.email
-                                ? "border border-red-500 focus:ring-red-500"
-                                : "border border-gray-300 focus:ring-indigo-500"
+                            ? "border border-red-500 focus:ring-red-500"
+                            : "border border-gray-300 focus:ring-indigo-500"
                             }`}
                     />
 
@@ -168,8 +168,8 @@ function LoginForm() {
                             }}
                             placeholder="Enter your password"
                             className={`w-full rounded-lg px-4 py-3 pr-12 focus:outline-none focus:ring-2 ${errors.password
-                                    ? "border border-red-500 focus:ring-red-500"
-                                    : "border border-gray-300 focus:ring-indigo-500"
+                                ? "border border-red-500 focus:ring-red-500"
+                                : "border border-gray-300 focus:ring-indigo-500"
                                 }`}
                         />
 

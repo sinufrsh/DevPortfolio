@@ -30,7 +30,7 @@ function ExperienceList({
         try {
 
             const response = await fetch(
-                `http://localhost:8080/api/experiences/${selectedId}`,
+                `${import.meta.env.VITE_API_BASE_URL}/api/experiences/${selectedId}`,
                 {
                     method: "DELETE",
                     headers: {

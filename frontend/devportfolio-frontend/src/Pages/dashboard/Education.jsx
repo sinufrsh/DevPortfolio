@@ -11,7 +11,7 @@ function Education() {
 
         try {
             const response = await fetch(
-                "http://localhost:8080/api/educations",
+                `${import.meta.env.VITE_API_BASE_URL}/api/educations`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

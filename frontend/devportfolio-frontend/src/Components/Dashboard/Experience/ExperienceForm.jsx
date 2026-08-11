@@ -41,8 +41,8 @@ function ExperienceForm({ fetchExperiences, editingExperience, setEditingExperie
 
         try {
             const url = editingExperience
-                ? `http://localhost:8080/api/experiences/${editingExperience.id}`
-                : "http://localhost:8080/api/experiences";
+                ? `${import.meta.env.VITE_API_BASE_URL}/api/experiences/${editingExperience.id}`
+                : `${import.meta.env.VITE_API_BASE_URL}/api/experiences`;
 
             const method = editingExperience ? "PUT" : "POST";
 

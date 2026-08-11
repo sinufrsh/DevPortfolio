@@ -39,7 +39,7 @@ function ProfileForm() {
 
             console.log("Method:", isNewPortfolio ? "POST" : "PUT");
             const response = await fetch(
-                "http://localhost:8080/api/portfolio",
+                `${import.meta.env.VITE_API_BASE_URL}/api/portfolio`,
                 {
                     method: isNewPortfolio ? "POST" : "PUT",
                     headers: {
@@ -84,7 +84,7 @@ function ProfileForm() {
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                "http://localhost:8080/api/portfolio",
+                `${import.meta.env.VITE_API_BASE_URL}/api/portfolio`,
                 {
                     method: "GET",
                     headers: {
@@ -139,7 +139,7 @@ function ProfileForm() {
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                "http://localhost:8080/api/portfolio/upload/profile-image",
+                `${import.meta.env.VITE_API_BASE_URL}/api/portfolio/upload/profile-image`,
                 {
                     method: "POST",
                     headers: {
@@ -186,7 +186,7 @@ function ProfileForm() {
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                "http://localhost:8080/api/portfolio/upload/resume",
+                `${import.meta.env.VITE_API_BASE_URL}/api/portfolio/upload/resume`,
                 {
                     method: "POST",
                     headers: {

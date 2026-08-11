@@ -24,7 +24,7 @@ function Preview() {
         try {
 
             const response = await fetch(
-                "http://localhost:8080/api/portfolio/preview",
+                `${import.meta.env.VITE_API_BASE_URL}/api/portfolio/preview`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

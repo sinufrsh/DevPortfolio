@@ -54,7 +54,7 @@ function Hero({ portfolio, isDark }) {
 
                             {portfolio?.resumeUrl && (
                                 <a
-                                    href={`http://localhost:8080${portfolio.resumeUrl}`}
+                                    href={`${import.meta.env.VITE_API_BASE_URL}${portfolio.resumeUrl}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="bg-indigo-600 hover:bg-indigo-700 transition px-6 sm:px-7 py-3 rounded-xl text-white text-center"
@@ -113,7 +113,7 @@ function Hero({ portfolio, isDark }) {
                     <div className="flex justify-center">
 
                         <img
-                            src={`http://localhost:8080${portfolio?.profileImageUrl}`}
+                            src={`${import.meta.env.VITE_API_BASE_URL}${portfolio?.profileImageUrl}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             alt="Profile"

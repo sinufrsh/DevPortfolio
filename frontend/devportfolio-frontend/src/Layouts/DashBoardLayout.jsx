@@ -15,7 +15,7 @@ function DashboardLayout() {
         try {
 
             const response = await fetch(
-                "http://localhost:8080/api/portfolio",
+                `${import.meta.env.VITE_API_BASE_URL}/api/portfolio`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

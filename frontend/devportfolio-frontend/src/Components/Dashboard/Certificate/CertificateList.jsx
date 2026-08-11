@@ -43,8 +43,7 @@ function CertificateList({
         try {
 
             const response = await fetch(
-
-                `http://localhost:8080/api/certifications/${selectedId}`,
+                `${import.meta.env.VITE_API_BASE_URL}/api/certifications/${selectedId}`,
 
                 {
                     method: "DELETE",

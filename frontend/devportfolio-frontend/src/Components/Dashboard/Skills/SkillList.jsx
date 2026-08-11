@@ -20,7 +20,7 @@ function SkillList({ skills, fetchSkills, setEdditing }) {
     const handleDelete = async () => {
         const token = localStorage.getItem("token");
         try {
-            const response = await fetch(`http://localhost:8080/api/skills/${selectedId}`,
+            const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/skills/${selectedId}`,
                 {
                     method: "DELETE",
                     headers: {

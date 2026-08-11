@@ -47,8 +47,8 @@ function CertificateForm({
         try {
 
             const url = editingCertification
-                ? `http://localhost:8080/api/certifications/${editingCertification.id}`
-                : "http://localhost:8080/api/certifications";
+                ? `${import.meta.env.VITE_API_BASE_URL}/api/certifications/${editingCertification.id}`
+                : `${import.meta.env.VITE_API_BASE_URL}/api/certifications`;
 
             const method = editingCertification ? "PUT" : "POST";
 

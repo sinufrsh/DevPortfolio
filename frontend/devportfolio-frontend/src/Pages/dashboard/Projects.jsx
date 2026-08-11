@@ -10,7 +10,7 @@ function Projects() {
     const fetchProjects = async () => {
         const token = localStorage.getItem("token");
         const response = await fetch(
-            "http://localhost:8080/api/projects",
+            `${import.meta.env.VITE_API_BASE_URL}/api/projects`,
             {
                 headers: {
                     Authorization: `Bearer ${token}`
