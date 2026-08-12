@@ -11,7 +11,7 @@ function PortfolioStatus({
     const handleCopyLink = async () => {
         try {
             await navigator.clipboard.writeText(
-                `http://localhost:5173/portfolio/${portfolio.username}`
+                `${import.meta.env.VITE_API_BASE_URL}/portfolio/${portfolio.username}`
             );
 
             toast.success("Portfolio link copied!");
